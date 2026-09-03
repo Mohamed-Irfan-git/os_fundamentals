@@ -22,3 +22,9 @@ above both cases we have to provide path
 but when we use this 
 ## execvp() -> vector/array + searches PATH
 
+## pipe()
+    A pipe allows one process to send data to another process.
+    int pipe(int pipefd[2]);
+
+    write(fd[1], data, number_of_bytes);
+    we dont knoweread(fd[0], buffer, number_of_bytes);
