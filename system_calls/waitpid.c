@@ -4,6 +4,10 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+//in this case parent wait only for specific child 
+// once tht child work is done parent getting wake up
+// this is much powerful then wait(NULL)
+
 int main(){
     pid_t pid;
     pid = fork();
