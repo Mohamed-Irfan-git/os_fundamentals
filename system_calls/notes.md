@@ -28,3 +28,16 @@ but when we use this
 
     write(fd[1], data, number_of_bytes);
     we dont knoweread(fd[0], buffer, number_of_bytes);
+
+### file modes
+    O_RDONLY  → Read only
+
+    O_WRONLY  → Write only
+
+    O_RDWR    → Read + Write
+
+    O_CREAT   → Create if missing
+
+    O_TRUNC   → Erase existing contents
+
+    O_APPEND  → Write at end
