@@ -41,3 +41,63 @@ but when we use this
     O_TRUNC   → Erase existing contents
 
     O_APPEND  → Write at end
+
+
+
+
+# LEarning roadmap of this system call
+1. Process IDs and process creation
+
+getpid(), getppid(), fork()
+
+Understand how Linux creates processes and how return values work.
+
+
+
+2. Parent-child process relationships
+
+Process trees, execution order, multiple children
+
+Practise tracing which process executes each statement.
+
+
+
+3. Process synchronization
+
+wait(), waitpid()
+
+Learn how a parent waits for a child and collects its termination status.
+
+
+
+4. Zombie and orphan processes
+
+Process termination, reparenting, process states
+
+Create both cases in C, observe them in Ubuntu, and learn how to prevent or handle them.
+
+
+
+5. Program execution
+
+exec() family
+
+Understand how a process runs a different program.
+
+
+
+6. File operations
+
+open(), read(), write(), close()
+
+
+
+7. Inter-process communication
+
+pipe(), shared memory
+
+
+
+8. Final practical and exam revision
+
+Code writing, output prediction, debugging, process diagrams
