@@ -3,9 +3,11 @@
 #include <fcntl.h>
 
 int main(){
-    char *args[] = {"ls","-l",NULL};
+    char *args[] = {"ls","-l",(char *)NULL};
 
     printf("Before execv\n");
+    fflush(stdout);
+    
     execv("/bin/ls",args);
     printf("After execv\n");
 
