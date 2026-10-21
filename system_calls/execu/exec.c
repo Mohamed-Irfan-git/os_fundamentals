@@ -4,8 +4,13 @@
 
 int main(){
     printf("Before exec\n");
-    execl("/bin/pwd", "pwd",NULL);
-    printf("After exec\n");
 
-    return 0;
+    // path.arg1,arg2,arg3 finally (char *NULL) mean this is the end
+    execl("/bin/pwd", "pwd",(char *)NULL);
+    printf("After exec\n");\
+
+    //if uppder one is run this one is never run becouse this entire program will have replace by this program
+    perror("execute failed\n");
+
+    return 1;
 }
